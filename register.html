@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="post.jsp" method="post" name="myform">
+    <label for="user">用户名：  </label>
+    <input type="text" name="user" id="user">
+    <br>
+    <label for="password">密码：  </label>
+    <input type="password" name="password" id="pass1">
+    <br>
+    <label for="password">确认密码：</label>
+    <input type="password" name="password" id="pass2">
+    <br>
+    <label for="address">籍贯：  </label>
+    <input type="text" name="address" id="address">
+    <br>
+    <label for="birth">出生年月：  </label>
+    <input type="date" name="birth" id="birth">
+    <br>
+    <label for="sex">性别：</label>
+    <input type="radio" name="sex" value="male">男
+    <input type="radio" name="sex" value="female">女
+    <br>
+    <label for="hobby">爱好：</label>
+    <textarea style="resize: none;" name="hobby"  cols="20" rows="20" placeholder="把你的爱好写在这里..."></textarea>
+    <br> 
+    <label for="tall">身高：  </label>
+    <input type="text" name="tall" id="tall">
+    <br>
+    <label for="email">邮箱：  </label>
+    <input type="text" name="email" id="email">
+    <br>
+    <label for="phone">手机号：  </label>
+    <input type="text" name="phone" id="phone">
+    <br>
+    <label for="introduction">介绍</label>
+    <textarea name="introduction"  cols="30" rows="30" placeholder="请把你的介绍写在这里..."></textarea>
+    <input type="submit" value="提交" onclick="javascript:check()">
+    <input type="reset" value="重置">
+</form>
+<script>
+    function check(){
+        var x_user=document.getElementById("user");
+        var x_tall=document.getElementById("tall").value;
+        var x_email=document.getElementById("email").value;
+        var x_phone=document.getElementById("phone").length();
+        var x_pass=document.getElementById("pass1");
+        var y_pass=document.getElementById("pass2");
+        var name="^[0-9a-zA-z].*";
+        var reg =/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+		alert("test");
+        if(x_user.length()<6||x_user.length()>10){
+            alert("请输入6-10位的用户名！");
+            return "jsp_1.jsp";
+        }
+       	if(!name.test(x_user)){
+       		 alert("请输入以字母开头的用户名！");
+       		 return "jsp_1.jsp";
+        }
+        if(!reg.test(x_email.value)){
+            alert("请输入正确的邮箱，如example@ex.com！");
+            return "jsp_1.jsp";
+        }
+        if(x_pass==""||y_pass==""){
+            alert("密码不能为空！");
+            return "jsp_1.jsp"; 
+        }
+        if(x_pass!=y_pass){
+            alert("两次输入密码不一致，请重新输入！");
+            return "jsp_1.jsp";
+        }
+        if(x_tall<=0){
+            alert("请输入正确的身高！");
+            return "jsp_1.jsp";
+        }
+        if(x_phone!=11){
+            alert("请输入正确的11位手机号");
+            return "jsp_1.jsp";
+        }        
+    }
+</script>
+</body>
+</html>
