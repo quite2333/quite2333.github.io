@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta content="个人博客,前端,HTML,css,JavaScript">
+<title>杨天辉的个人简介</title> 
+<link rel="stylesheet" href="./css/normalize.css">
+
+<base href="www.yth.com">
+</head>
+
+<body >
+    <!-- 导航栏 -->
+    <header>
+        <div id="navi">
+            <div class="title" align="center">
+                <a href="./index.html"><font size="4" color="white">首页</font></a>
+            </div>
+            <div  class="title" align="center">
+                <a href="./introduction.html"><font size="4" color="white">个人简介</font></a>
+            </div>
+            <div class="title" align="center">
+                <a href="./txt-list.html"><font size="4" color="white">文章列表</font></a>
+            </div>
+            <div class="title" align="center">
+                <a href="./life.html"><font size="4" color="white">生活轨迹</font></a>
+            </div>
+            <div class="title" align="center">
+                <a href="./study-res.html"><font size="4" color="white">学习资源</font></a>
+            </div>
+            <div class="title" align="center" float="right">
+                <a href="./register.html"><font size="4" color="white">注册</font></a>
+            </div>
+            <div class="title" align="center" float="right">
+                <a href="./register.html"><font size="4" color="white">登录</font></a>
+            </div>
+        </div>
+        <div id="pic"></div>
+    </header>
+    <!-- 内容栏 -->
+    <div class="cgap">
+        <div class="cgap1">
+        </div>
+        <div class="cgap2"align="center">
+            <font size="6" color="white" >文章列表</font>
+        </div>
+        <div class="cgap1">
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="compose"></div>
+        
+        <div class="little-container">
+           
+            <div class="post">
+              <div class="image"><a href="text.html"><img src="./css/images/blog1.jpg" alt="" class="img-responsive"></a></div>
+              <h3><a href="A^B.html">HDU2035 人见人爱A^B(快速幂)</a></h3>
+              <p class="post__intro">求A^B的最后三位数表示的整数。说明：A^B的含义是“A的B次方”。</p>
+              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
+            </div>
+        </div>
+
+        <div class="little-container">
+            <div class="post">
+              <div class="image"><a href="text.html"><img src="./css/images/blog2.jpg" alt="" class="img-responsive"></a></div>
+              <h3><a href="Moving Tables.html">Moving Tables</a></h3>
+              <p class="post__intro">在一个狭窄的走廊里将桌子从一个房间移动到另一个房间，走廊的宽度只能允许一个桌子通过。给出t，表示有t组测试数据。再给出n，表示要移动n个桌子。n下面有n行，每行两个数字，表示将桌子从a房间移到b房间。走廊的分布图如一图所示，每移动一个桌子到达目的地房间需要花10分钟，问移动n个桌子所需要的时间。</p>
+              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
+            </div>
+          </div>
+
+        <div class="little-container">
+            <div class="post">
+              <div class="image"><a href="text.html"><img src="./css/images/blog3.jpg" alt="" class="img-responsive"></a></div>
+              <h3><a href="The Horse Racing.html">The Horse Racing</a></h3>
+              <p class="post__intro">Were Tian Ji lives in nowadays, he will certainly laugh at himself. Even more, were he sitting in the ACM contest right now, he may discover that the horse racing problem can be simply viewed as finding the maximum matching in a bipartite graph. Draw Tian's horses on one side, and the king's horses on the other. Whenever...</p>
+              <p class="read-more"><a href="text.html" class="btn btn-ghost">Continue reading     </a></p>
+            </div>
+        </div>
+
+        <div class="compose"> </div>
+
+    </div>
+</body>
+<style>
+    #navi{   
+        background-color: grey;
+        margin-top: 5px;
+        border: 1px white solid;
+        height: 75px;
+        width: 100%;
+    }   
+    .title{
+				line-height:70px ;
+				float:left;
+				border: 1px  white solid;
+				width: 90px;
+				height: 73px;
+				margin-left: 95px;
+     }
+     div {
+    display: block;
+    }
+    #pic {
+    margin-top: 5px;
+    width: 100%;
+    height: 300px;
+    background-image: url(./css/images/pic.jpg);
+/*     background-repeat: no-repeat; */
+    }
+    .cgap{
+        margin-top: 2px;
+        height: 75px;
+        width: 100%;
+        border: 1px white solid;
+        background-color: cadetblue;
+    }
+    .cgap1 {
+    width: 650px;
+    height: 74px;
+    float: left;
+    }
+    .cgap2{
+    width: 250px;
+    height: 74px;
+    float: left;
+    }
+    .container{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .compose{
+        height: 1px;
+        width: 1px;
+        clear: both;
+    }
+    .row {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .sm-title{
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .text-center {
+        text-align: center;
+    }
+    .text-uppercase {
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+    .margin-bottom {
+        margin-bottom: 30px !important;
+    }
+    .little-container{
+        float:left;
+        width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+        text-align:center;
+        left: 25%;
+}
+    .post {
+        margin-bottom: 60px;
+        text-align: center;
+        display:inline-block;
+    }
+    .post .image {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    }
+    .img-responsive{
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .post .post__intro {
+    font-size: 15px;
+    color: #999999;
+    }
+    .btn {
+    display: inline-block;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.55;
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    }
+    .btn-ghost {
+    color: #ef5285;
+    background-color: transparent;
+    border-color: #ef5285;
+    }
+</style>
+</html>
